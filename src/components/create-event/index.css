@@ -14,22 +14,40 @@
   color: rgba(132, 86, 236, 1);
   font-family: helvetica;
 }
-
+.create-event-root > .form {
+  margin-top: 20px;
+}
 .create-event-root > .form > div {
   display: flex;
   flex-direction: column;
-  height: 70px;
+  height: 100px;
   justify-content: space-between;
 }
 
 .create-event-root label {
   font-size: 24px;
 }
-.create-event-root > input {
-  padding: 20px 20px;
-  line-height: 50px;
+.create-event-root input {
+  padding: 10px 20px;
+  line-height: 10px;
   font-size: 15px;
-  width: 20px;
+  width: 350px;
   border: 1px solid rgba(132, 86, 236, 1);
-  border-radius: 2px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .create-event-root {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .create-event-root > div:nth-child(1) {
+    font-size: 24px;
+    width: 100%;
+    font-weight: 700;
+    color: rgba(132, 86, 236, 1);
+    font-family: helvetica;
+  }
 }
